@@ -1,0 +1,43 @@
+Task 1 : Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP/1.1 : short for Hypertext Transfer Protocol 1.1, 
+it is the foundation of communication on the World Wide Web.
+
+Request-Response Model: HTTP/1.1 operates on a request-response model. 
+Clients (usually web browsers) send requests to servers, which respond with data (web pages, images, etc.).
+Each request contains a method (e.g., GET, POST), a URL, and headers.
+
+Text-Based Protocol: HTTP/1.1 uses plain text messages. 
+Requests and responses are human-readable.
+However, this simplicity comes with overhead due to repeated header information.
+
+Persistent Connections: Unlike its predecessor, HTTP/1.0, HTTP/1.1 supports persistent connections.
+Multiple requests can be sent over a single connection, reducing latency.
+
+Caching and Compression: HTTP/1.1 introduced caching mechanisms. Browsers store resources locally to avoid redundant downloads.
+Gzip compression minimizes data transfer size.
+
+Limitations: Head-of-Line Blocking: If one resource stalls, others behind it wait.
+
+Latency: Multiple connections still incur latency.
+
+----------------------------------------------------------------
+
+HTTP/2 is the successor to HTTP/1.1, it revolutionized web communication.
+
+Multiplexing: Unlike HTTP/1.1, which relied on separate TCP connections for each resource, HTTP/2 allows 
+multiple requests over a single connection.
+Data from various requests is interleaved, making it more efficient.
+
+Binary Protocol: HTTP/2 uses a binary protocol, reducing overhead and improving performance.
+Headers are compressed using HPACK, enhancing efficiency.
+
+Persistent Connections: All requests share the same persistent connection, eliminating the need for repeated setup.
+New requests create separate streams within the connection.
+
+Server Push: HTTP/2 proactively pushes resources to the client cache.
+No more waiting for subsequent requests; the server anticipates needs.
+
+Backward Compatibility: HTTP/2 maintains compatibility with HTTP/1.1 methods and status codes.
+It builds upon the past while embracing the future.
+

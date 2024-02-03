@@ -1,0 +1,25 @@
+Task 2: Write a blog about objects and its internal representation in Javascript
+
+An object is a collection of key-value pairs that can store various types of data.
+
+I have created the below example:
+
+const obj = {
+	  name: 'Navinchandru',
+	  age: 24,
+	  working: true	 
+}
+
+Internal representation:
+
+We creted an object in which name, age and Working and known as KEYS and 'Navinchandru', 24, true are VALUES
+we can manipulate the VALUES of a Key.
+Object have a key which have a memory that helps to store the values. From there, We can access it.
+
+In the above example, 'Navinchandru' is a value which is stored in the key 'name', 
+this key value pair is present inside an object 'obj'.
+
+Objects can store various data types, including strings, numbers, booleans, and even other objects.
+
+
+
